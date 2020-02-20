@@ -10,6 +10,7 @@
 """
 import random
 
+#AlbaniVanfouquesThepinier
 
 """
 la liste des caractères semi-graphiques correspondant aux différentes cartes
