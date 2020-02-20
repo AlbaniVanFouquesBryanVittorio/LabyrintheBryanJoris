@@ -11,6 +11,8 @@
 import random
 
 #AlbaniVanfouquesThepinier
+#Joris
+
 
 """
 la liste des caractères semi-graphiques correspondant aux différentes cartes
