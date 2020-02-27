@@ -23,10 +23,8 @@ def Joueur(nom):
 
 
 def ajouterTresor(joueur,tresor):
-    joueur["listetresor"].append(tresor)
-
-    #if tresor not in joueur[1]:
-      #joueur[1]=joueur[1]+[tresor]
+    if tresor not in joueur["listetresor"]:
+      joueur["listetresor"].append(tresor)
 
     """
     ajoute un trésor à trouver à un joueur (ce trésor sera ajouter en fin de liste) Si le trésor est déjà dans la liste des trésors à trouver la fonction ne fait rien
