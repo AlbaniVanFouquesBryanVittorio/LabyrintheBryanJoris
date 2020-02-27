@@ -33,6 +33,8 @@ def Carte( nord, est, sud, ouest, tresor=0, pions=[]):
     pass
 
 def estValide(c):
+    
+
     """
     retourne un booléen indiquant si la carte est valide ou non c'est à dire qu'elle a zéro un ou deux murs
     paramètre: c une carte
