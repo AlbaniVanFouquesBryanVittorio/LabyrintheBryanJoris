@@ -33,41 +33,69 @@ def Carte( nord, est, sud, ouest, tresor=0, pions=[]):
     pass
 
 def estValide(c):
-    
+  """
+  retourne un booléen indiquant si la carte est valide ou non c'est à dire qu'elle a zéro un ou deux murs
+  paramètre: c une carte
+  """
+  res=True
+  cpt=0
+  i=0
+  while i<4 and res:
+    if c[i] is True:
+      cpt=cpt+1
+      if cpt<3:
+        res=False
+    i=i+1
 
-    """
-    retourne un booléen indiquant si la carte est valide ou non c'est à dire qu'elle a zéro un ou deux murs
-    paramètre: c une carte
-    """
-    pass
+  return res
+
+print(estValide([False,False,True,True]))
 
 def murNord(c):
-    """
-    retourne un booléen indiquant si la carte possède un mur au nord
-    paramètre: c une carte
-    """
-    pass
+  """
+  retourne un booléen indiquant si la carte possède un mur au nord
+  paramètre: c une carte
+  """
+  res=False
+  if c[0] is True:
+    res =True
+  
+  return res 
+  
+#print(murNord([False,False,True,False]))
 
 def murSud(c):
-    """
-    retourne un booléen indiquant si la carte possède un mur au sud
-    paramètre: c une carte
-    """
-    pass
+  """
+  retourne un booléen indiquant si la carte possède un mur au sud
+  paramètre: c une carte
+  """
+  res=False
+  if c[2] is True:
+    res =True
+  
+  return res 
 
 def murEst(c):
-    """
-    retourne un booléen indiquant si la carte possède un mur à l'est
-    paramètre: c une carte
-    """
-    pass
+  """
+  retourne un booléen indiquant si la carte possède un mur à l'est
+  paramètre: c une carte
+  """
+  res=False
+  if c[1] is True:
+    res =True
+  
+  return res 
 
 def murOuest(c):
-    """
-    retourne un booléen indiquant si la carte possède un mur à l'ouest
-    paramètre: c une carte
-    """
-    pass
+  """
+  retourne un booléen indiquant si la carte possède un mur à l'ouest
+  paramètre: c une carte
+  """
+  res=False
+  if c[3] is True:
+    res =True
+  
+  return res 
 
 def getListePions(c):
     """
